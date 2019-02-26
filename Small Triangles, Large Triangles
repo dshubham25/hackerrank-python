@@ -1,0 +1,27 @@
+int i,j;
+double p,temp_area, arr[n],area;
+triangle temp;
+double ta,tb,tc;
+for(i=0;i<n;i++){
+
+    ta=(tr+i)->a;
+    tb=(tr+i)->b;
+    tc=(tr+i)->c;
+        p=(ta+tb+tc)/2.0;
+        area=p*(p-ta)*(p-tb)*(p-tc);
+        arr[i]=area;
+                }
+
+        for(i=0;i<n;i++){
+            for(j=0;j<n-i-1;j++){
+                    if(arr[j]>arr[j+1]){
+                        temp_area=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=temp_area;
+
+                        temp=tr[j];
+                        tr[j]=tr[j+1];
+                        tr[j+1]=temp;
+                                        }
+                                }
+                        }
