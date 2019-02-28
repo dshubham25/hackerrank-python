@@ -1,0 +1,2 @@
+N = int(input())
+print('Weird') if N % 2 == 1 or (N >= 6 and N <= 20) else print('Not Weird') 
