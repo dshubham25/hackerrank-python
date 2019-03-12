@@ -1,0 +1,5 @@
+from collections import deque
+d = deque()
+for _ in range(int(input())):
+    eval('d.{0}({1})'.format(*input().split() + [' ']))
+print(*d)
