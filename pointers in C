@@ -1,3 +1,0 @@
-// Complete this function
-    *a=*a+*b;
-    *b=abs(*a-(2**b));
