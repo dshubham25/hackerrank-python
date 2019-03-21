@@ -1,0 +1,15 @@
+if __name__ == '__main__':
+   student = []
+for _ in range(int(input())):
+        name = input()
+        score = float(input())
+        student.append([name,score]) 
+def minlist(alist): 
+        # returns the list of minimum name and score
+        return [i for i in alist if i[1] == min(alist,key=lambda x:x[1])[1]]
+student = [i for i in student if i not in minlist(student)]
+names = [i[0] for i in (minlist(student))]
+names.sort()
+for name in names:
+        print(name)
+
