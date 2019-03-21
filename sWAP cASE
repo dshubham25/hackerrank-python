@@ -1,0 +1,13 @@
+def swap_case(s):
+    new_word = ''
+    s = list(s.split())
+
+    for word in s :
+        for letter in word:
+            if letter == letter.upper() : 
+               new_word += letter.lower()
+               
+            else:
+                new_word += letter.upper()
+        new_word += " "
+    return new_word
