@@ -1,0 +1,6 @@
+n = int(input())
+s1 = set(map(int, input().split()))
+n2 = int(input())
+s2 = set(map(int, input().split()))
+
+print(len(set(s1.union(s2))))
