@@ -1,0 +1,18 @@
+ N = int(input())
+    l=[]
+    for n in range (N):
+        b = input().split()
+        if 'insert' in b:
+            l.insert(int(b[1]),int(b[2]))
+        elif 'remove' in b:
+            l.remove(int(b[1]))
+        elif 'append' in b:
+            l.append(int(b[1]))
+        elif 'sort' in b:
+            l.sort() 
+        elif 'pop' in b:
+            l.pop()
+        elif 'reverse' in b:
+            l.reverse()
+        elif 'print' in b:
+            print(l)  
