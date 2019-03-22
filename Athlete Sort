@@ -1,0 +1,32 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+if __name__ == '__main__':
+    nm = input().split()
+
+    n = int(nm[0])
+
+    m = int(nm[1])
+
+    arr,arrage,arrend = [],[],[]
+    
+    
+    for _ in range(n):
+        arr.append(list(map(int, input().rstrip().split())))
+
+    k = int(input())
+    for i in range(n) :
+        arrage.append(arr[i][k])
+    arrage=sorted(arrage)
+    for i in range(n) :
+        for j in range(n) :
+            if arrage[i]==arr[j][k] and arr[j] not in arrend :
+                arrend.append(arr[j])
+                m=list(arr[j])
+                print(' '.join(str(e) for e in m))
+    
