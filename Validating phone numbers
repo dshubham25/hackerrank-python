@@ -1,0 +1,6 @@
+for _ in range(int(input())):
+    number=input()
+    if number[0] in '789' and len(number)==10 and all([i in '1234567890' for i in number]):
+        print('YES')
+    else:
+        print('NO')
