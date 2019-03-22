@@ -1,0 +1,2 @@
+x,k = map(int,input().strip().split())
+print(eval(input() + '== k'))
