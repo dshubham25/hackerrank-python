@@ -1,0 +1,8 @@
+import operator
+
+def person_lister(f):
+    def inner(people):
+        result=sorted( people,key = lambda c : int(c[2]) )
+        return [ f(n) for n in result ]
+        # complete the function
+    return inner
