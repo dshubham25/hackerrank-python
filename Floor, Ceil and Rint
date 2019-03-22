@@ -1,0 +1,4 @@
+import numpy
+numpy.set_printoptions(sign=' ')
+n=numpy.array(input().split(), float)
+print("{}\n{}\n{}".format(numpy.floor(n),numpy.ceil(n),numpy.rint(n)))
