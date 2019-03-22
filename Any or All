@@ -1,0 +1,2 @@
+n, check = input(), input().split()
+print(all([bool(int(i) >= 0) for i in check]) and any([ i[::-1] == i for i in check]))
