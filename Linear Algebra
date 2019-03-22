@@ -1,0 +1,7 @@
+
+
+import numpy
+a=int(input())
+arr=numpy.array(list(input().split() for _ in range(a)),float)
+numpy.set_printoptions(legacy='1.13')
+print(numpy.linalg.det(arr))
