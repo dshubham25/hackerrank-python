@@ -1,0 +1,5 @@
+import numpy
+a,b=map(int,input().split())
+arr=numpy.array(list(input().split() for _ in range(a)),int)
+print (numpy.transpose(arr))
+print(arr.flatten())
