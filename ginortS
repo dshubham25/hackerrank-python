@@ -1,0 +1,18 @@
+string = input()
+odd = []
+even = []
+lowercase = []
+uppercase = []
+for i in string:
+    if i == '1' or i == '3'or i == '5' or i == '7' or i == '9': 
+        odd.append(i)
+    elif i == '2' or i == '4' or i == '6' or i == '8' or i == '0': 
+        even.append(i)
+    elif  ord(i) >= 97 and ord(i) <= 122:
+        lowercase.append(i)
+    elif  ord(i) >= 65 and ord(i) <= 90:
+        uppercase.append(i)
+print(''.join(str(x) for x in sorted(lowercase)),end="")
+print(''.join(str(x) for x in sorted(uppercase)),end="")
+print(''.join(str(x) for x in sorted(odd)),end="")
+print(''.join(str(x) for x in sorted(even)))
