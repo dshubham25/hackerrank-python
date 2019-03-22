@@ -1,0 +1,5 @@
+import re
+s = input()
+matches = re.finditer(r'(?=([QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm][AEIOUaeiou][AEIOUaeiou]+[QWRTYPSDFGHJKLZXCVBNMqwrtypsdfghjklzxcvbnm]))',s)
+results = [match.group(1)[1:-1] for match in matches]
+print('\n'.join(results or ['-1']))
