@@ -1,0 +1,1 @@
+regex_pattern = r"[(\s),(\s),(\s).(\s)]"
